@@ -20,6 +20,12 @@ python etl_warehouse.py --rebuild # -> warehouse.duckdb (star schema)
 python test_pipeline.py           # 4 tests, all layers
 ```
 
+## Run it on GitHub
+
+- **CI**: `.github/workflows/ci.yml` builds the data and warehouse and runs the tests on every push and pull request.
+- **Codespaces**: on the repo page choose Code, then Codespaces, then Create. The dev container installs the
+  requirements and starts the app on port 8501, which opens in the browser automatically.
+
 ## Using your real dataset
 
 Put your `.xlsx` (e.g. `job_market_pbl_FINAL_CLEANED.xlsx`) in `data/`, delete `warehouse.duckdb`, and rerun.

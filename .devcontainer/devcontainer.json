@@ -1,0 +1,10 @@
+{
+  "name": "SkillCompass India",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "postAttachCommand": "streamlit run app.py --server.port 8501 --server.headless true",
+  "forwardPorts": [8501],
+  "portsAttributes": {
+    "8501": { "label": "SkillCompass", "onAutoForward": "openBrowser" }
+  }
+}
